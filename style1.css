@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* name and experience */
+.rating {
+  display: inline-block;
+}
+.rating input {
+  display: none;
+}
+.rating label {
+  font-size: 30px;
+  padding: 5px;
+  cursor: pointer;
+}
+.rating label:before {
+  content: '\2606'; 
+}
+.rating input:checked ~ label:before {
+  content: '\2605'; 
+  color: gold;
+}
+
+/* table */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  text-align:start;
+  padding: 15px;
+}
+
+th{
+  text-align: start;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.required {
+  color: red; 
+  margin-left: 5px;
+}
+
+textarea {
+  width: 50%;
+  height: 150px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input{
+  font-size: larger;
+}
